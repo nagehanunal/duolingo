@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: duolingo-sans,sans-serif;
+}
+body {
+    background-color: #131f24;
+    color: #4b4b4b;
+}
+
+/*NAVBAR*/
+.navbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #131f24;
+    padding: 50px 32px;
+}
+
+.baslik {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    font-weight: 800;
+    color: #fffefe;
+    cursor: pointer;
+}
+.bi-x-lg {
+    font-size: 25px;
+    color: #4b4b4b;
+    cursor: pointer;
+}
+.bi-x-lg:hover {
+    color: #1cb0f6;
+}
+
+.btnkaydol{
+    background-color:transparent;
+    border: 2px solid #37464f;
+    color: #1cb0f6;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+/* GÖVDE */
+.information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 35px; /* Navbarın altı boşluk */
+    
+}
+
+/* Her bir input kutusu */
+.input-group {
+    position: relative;
+    width: 470px; 
+    background-color: #1d2d35;
+    border: 2px solid #37464f;
+    border-radius: 13px; /* Kenarları ovalleşti */
+    display: flex;
+    align-items: center;
+        margin-top: 10px;
+}
+
+.input-group input {
+    width: 100%;
+     height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 18px 20px;
+    color: #ffffff;
+    font-size: 20px;
+        font-weight: 600;
+}
+
+.input-group input::placeholder {
+    color: #77868c;
+}
+
+/* Parola yanındaki yazı */
+.unuttum {
+    position: absolute;
+    right: 20px;
+    color: #77868c;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.unuttum:hover {
+    color: #ffffff;
+}
+
+/* OTURUM AÇ Butonu */
+.btnoturum {
+    width: 470px;
+    height: 62px;
+    background-color: #1cb0f6;
+    color: #131f24;
+    border: none;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: 800;
+    cursor: pointer;
+    margin-top: 14px;
+}
+
+        .btnoturum:hover {
+    background-color: #1899d6;
+}
+/* VEYA Bölümü */
+.veya-bolumu {
+    display: flex;
+    align-items: center;
+    width: 470px;
+    margin: 15px 0;
+}
+
+.veya-bolumu .cizgi {
+    flex: 1;
+    height: 2px;
+    background-color: #37464f;
+}
+
+.veya-bolumu span {
+    padding: 0 15px;
+    color: #77868c;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* Sosyal Giriş Butonları */
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 470px;
+    height: 62px;
+    background-color: transparent;
+    color: #ffffff;
+    border: 3px solid #37464f;
+    border-radius: 15px;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+    gap: 14px;
+}
+.social-btn:hover {
+    background-color: #1d2d35;
+}
